@@ -1,26 +1,33 @@
-# AI4S Agent CNS挑战赛 — 任务2
+# AI4S Molecular Docking Agent
 
-## 项目结构
-```
-ai4s_chem/
-├── target.pdb          # 靶点蛋白结构
-├── result/             # 输出目录
-│   ├── result.csv      # 提交文件（分子+路线）
-│   └── result.log      # Agent日志
-├── receptor.pdbqt      # 受体文件（待生成）
-├── pocket.txt          # 对接口袋定义（待生成）
-└── candidates/         # 候选分子中间文件
-```
+## English
 
-## 快速开始
-```bash
-# 激活环境
-cd ~/.openclaw/workspace/retrosyn && source venv/bin/activate
+AI4S Molecular Docking Competition - Complete training process of an intelligent molecular optimization agent featuring:
 
-# 运行Agent
-python /Users/pwngwc/ai4s_chem/agent.py
-```
+- Pocket rescanning
+- Stage5-like shape simplification
+- Retrosynthesis route repair
+- Synthetic accessibility (SA) optimization
+- AutoDock Vina-based molecular docking
+- Lipinski rules filtering
 
-## 评分权重
-- 分子评分 (0.7): binding(0.8) + validity(0.1) + SA(0.1)
-- 路线评分 (0.3): route_validity(0.55) + starting_material(0.30) + step_penalty(0.05) + convergence(0.05) + balance(0.05)
+### Key Files:
+- `agent.py`: Main intelligent agent
+- `candidate_rerank.py`: Candidate ranking & optimization
+- Various stage optimization scripts
+
+## 中文
+
+AI4S 分子对接挑战赛 - 智能分子优化代理的完整训练过程，包括：
+
+- 口袋重新扫描
+- Stage5风格形状简化
+- 逆合成路线修复
+- 合成可及性（SA）优化
+- 基于AutoDock Vina的分子对接
+- Lipinski规则过滤
+
+### 核心文件：
+- `agent.py`: 主要智能代理
+- `candidate_rerank.py`: 候选分子排序与优化
+- 各阶段优化脚本
