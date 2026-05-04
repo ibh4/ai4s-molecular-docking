@@ -1,0 +1,5 @@
+run_id,timestamp,mol_smiles,online_score,mol_score,binding_score,sa_score,validity_score,route_score,llm_score,local_pred_total,alignment_error
+stage5_attack_submit,2026-04-30 21:47:28,O=C(Nc1ccccc1F)C1=CC=C2C=CC=c3c(F)ccnc3=CC=C21,0.506074,0.316462,0.260375,0.081623,1.0,0.9485,0.5,0.5846,0.0785
+
+stage12_single_pyrrolopyrimidine_submit,2026-05-01 00:01:47,O=C(Nc1ccc(F)cc1)n1ccc2ncncc21,0.478234,0.276049,0.148375,0.573486,1.0,0.95,0.5,0.5684,0.0902
+stage13_pyridine_pyrimidine_ext_submit,2026-05-02 08:56:05,O=C(Nc1ccc(C#N)cc1)c1nccc(-c2ncccn2)n1,0.472403,0.267986,0.140875,0.552861,1.0,0.949375,0.5,0.53,0.0576

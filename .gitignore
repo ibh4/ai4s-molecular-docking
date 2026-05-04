@@ -1,0 +1,43 @@
+# Virtual environments
+.venv/
+bin/
+include/
+lib/
+share/
+__pycache__/
+*.pyc
+*.pyo
+pyvenv.cfg
+
+# Large data files
+*.pdbqt
+*.pdb
+*.sdf
+*.mol2
+*.mol
+docking/
+results/
+*.pkl
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.log
+*.txt
+
+# Output
+result/
+*.zip
+*.pdf
+*.png
+*.jpg
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
