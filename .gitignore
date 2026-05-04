@@ -29,8 +29,8 @@ results/
 result/
 *.zip
 *.pdf
-*.png
 *.jpg
+!images/*.png
 
 # OS files
 .DS_Store
