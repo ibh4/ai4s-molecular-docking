@@ -5,6 +5,29 @@
 ### Competition Purpose
 This repository documents the complete training process of an intelligent molecular optimization agent for the AI4S Molecular Docking Competition. The goal is to discover novel small molecules with strong binding affinity to a target protein (human JAK2 JH2 pseudokinase domain), while maintaining good synthetic accessibility (SA) and valid retrosynthesis routes.
 
+### Target Protein (target.pdb)
+| Property | Value |
+|----------|-------|
+| Protein Name | Human JAK2 JH2 pseudokinase domain |
+| Chains | A |
+| Total ATOM records | 1976 |
+| HETATM records | 0 |
+| Water molecules | 0 |
+| Unique residue types | 20 |
+| Residues | ALA, ARG, ASN, ASP, CYS, GLN, GLU, GLY, HIS, ILE, LEU, LYS, MET, PHE, PRO, SER, THR, TRP, TYR, VAL |
+
+### Top Performing Molecules
+
+| Rank | Name | SMILES | Binding | SA | Total | Structure |
+|------|------|--------|---------|----|-------|-----------|
+| 1 | Stage14a_Top1 | `O=C(Nc1ccc(C(F)(F)F)cc1F)c1cccc2ccccc12` | 0.2955 | 0.73 | 0.523255 | ![Stage14a_Top1](images/Stage14a_Top1.png) |
+| 2 | S15_0001 | `O=C(Nc1ccc(C(F)(F)F)cc1F)c1cccc2ccccc12` | 0.3000 | 0.9550 | 0.4310 | ![S15_0001](images/S15_0001.png) |
+| 3 | S15_0002 | `O=C(Nc1ccc(C(F)(F)F)cc1)c1cccc2ccccc12` | 0.3000 | 0.9550 | 0.4310 | ![S15_0002](images/S15_0002.png) |
+| 4 | S15_0003 | `N#Cc1ccc(NC(=O)c2cccc3ccccc23)cc1` | 0.3000 | 0.9550 | 0.4310 | ![S15_0003](images/S15_0003.png) |
+
+**Stage14a_Top1 Route**: `O=C(Cl)c1cccc2ccccc12.Nc1ccc(C(F)(F)F)cc1F>>O=C(Nc1ccc(C(F)(F)F)cc1F)c1cccc2ccccc12`
+(naphthoyl chloride + substituted aniline → target amide)
+
 ### Core Scoring Logic
 ```
 Total Score = 0.7 × Molecule Score + 0.3 × Route Score
@@ -57,6 +80,29 @@ The agent doesn't "invent molecules out of thin air" - it executes an automated 
 
 ### 比赛目的
 本仓库记录了 AI4S 分子对接挑战赛智能分子优化代理的完整训练过程。目标是发现对靶点蛋白（人类 JAK2 JH2 假激酶结构域）具有强结合亲和力的新型小分子，同时保持良好的合成可及性（SA）和有效的逆合成路线。
+
+### 靶点蛋白 (target.pdb)
+| 属性 | 值 |
+|------|-----|
+| 蛋白名称 | 人类 JAK2 JH2 假激酶结构域 |
+| 链 | A |
+| 总 ATOM 记录数 | 1976 |
+| HETATM 记录数 | 0 |
+| 水分子 | 0 |
+| 独特残基类型 | 20 |
+| 残基 | ALA, ARG, ASN, ASP, CYS, GLN, GLU, GLY, HIS, ILE, LEU, LYS, MET, PHE, PRO, SER, THR, TRP, TYR, VAL |
+
+### 高分分子
+
+| 排名 | 名称 | SMILES | Binding | SA | 总分 | 结构 |
+|------|------|--------|---------|----|------|------|
+| 1 | Stage14a_Top1 | `O=C(Nc1ccc(C(F)(F)F)cc1F)c1cccc2ccccc12` | 0.2955 | 0.73 | 0.523255 | ![Stage14a_Top1](images/Stage14a_Top1.png) |
+| 2 | S15_0001 | `O=C(Nc1ccc(C(F)(F)F)cc1F)c1cccc2ccccc12` | 0.3000 | 0.9550 | 0.4310 | ![S15_0001](images/S15_0001.png) |
+| 3 | S15_0002 | `O=C(Nc1ccc(C(F)(F)F)cc1)c1cccc2ccccc12` | 0.3000 | 0.9550 | 0.4310 | ![S15_0002](images/S15_0002.png) |
+| 4 | S15_0003 | `N#Cc1ccc(NC(=O)c2cccc3ccccc23)cc1` | 0.3000 | 0.9550 | 0.4310 | ![S15_0003](images/S15_0003.png) |
+
+**Stage14a_Top1 合成路线**: `O=C(Cl)c1cccc2ccccc12.Nc1ccc(C(F)(F)F)cc1F>>O=C(Nc1ccc(C(F)(F)F)cc1F)c1cccc2ccccc12`
+(萘甲酰氯 + 取代苯胺 → 目标酰胺)
 
 ### 核心评分逻辑
 ```
